@@ -1,4 +1,4 @@
-function handleResponseFromAPI = (promise) =>
+const handleResponseFromAPI = (promise) =>
   promise
     .then(() => ({ body: 'success', status: 200 }))
     .catch(() => new Error())
